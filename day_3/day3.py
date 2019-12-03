@@ -24,7 +24,7 @@ class CrossedWires:
         for i in wire:
             for _ in range(int(i[1:])):
                 steps += 1
-                position = self.move(position, direction=i[0])
+                position = self.move(position, i[0])
 
                 if position not in points:
                     points[position] = steps
