@@ -11,7 +11,7 @@ def password_counter(in0, in1):
             if len(list(set(num))) != len(list(num)):
                 passwords1 = passwords1 + 1
 
-                if any([(k, v) for k, v in Counter(num).items() if v == 2]):
+                if 2 in Counter(num).values():
                     passwords2 = passwords2 + 1
 
     return passwords1, passwords2
