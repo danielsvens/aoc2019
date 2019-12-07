@@ -9,10 +9,10 @@ def password_counter(in0, in1):
         num = str(num)
         if list(sorted(num)) == list(num):
             if len(list(set(num))) != len(list(num)):
-                passwords1 = passwords1 + 1
+                passwords1 += 1
 
                 if 2 in Counter(num).values():
-                    passwords2 = passwords2 + 1
+                    passwords2 += 1
 
     return passwords1, passwords2
 
