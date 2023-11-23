@@ -1,5 +1,4 @@
 
-# input
 with open('input.txt') as f:
     data = [int(l.strip()) for l in f]
 
